@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title></title>
+    <style>
+      * {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      button {
+        border: none;
+        background-color: #0064b1;
+        border-radius: 7px;
+        padding: 15px;
+        font-size: 1rem;
+        color: orange;
+        transition: all 0.2s ease;
+      }
+
+      div {
+        margin: 1rem 0;
+      }
+
+      button:focus{
+        filter:invert();
+      }
+
+    button:hover{
+        border-radius: 90%;
+    }
+   
+    button:disabled{
+        font-size: 4rem;
+    }
+
+    input[type=checkbox]:checked{
+        height:30px;
+        width: 30px;
+    }
+
+    input::placeholder{
+        border: 3px solid purple;
+    }
+
+      /* Add a 3px purple border to the input containing a placeholder. */
+    </style>
+  </head>
+  <body>
+    <button type="button">
+      Button 1
+    </button>
+    <button type="button">
+      Button 2
+    </button>
+    <button type="button" disabled>
+      Button 3
+    </button>
+
+    <form>
+      <div>
+        <label for="check-1">Un-checked</label>
+        <input type="checkbox" />
+      </div>
+      <div>
+        <label for="check-2">Un-checked</label>
+        <input type="checkbox" />
+      </div>
+      <div>
+        <label for="check-3">Checked</label>
+        <input type="checkbox" checked />
+      </div>
+      <div>
+        <label for="check-4">Un-checked</label>
+        <input type="checkbox" />
+      </div>
+      <div>
+        <label for="no-placeholder">No placeholder here</label>
+        <input type="text" />
+      </div>
+      <div>
+        <label for="placeholder-preset">Placeholder Is Here!</label>
+        <input type="text" placeholder="I am the placeholder." />
+      </div>
+    </form>
+  </body>
+</html>
